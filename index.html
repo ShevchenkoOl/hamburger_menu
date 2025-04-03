@@ -99,7 +99,7 @@
   <form>
     <h2>Kontaktujte nas</h2>
     <label for="name">Jmeno:
-      <input type="text" id="name">
+      <input type="tel" id="name" placeholder="Enter you name....." pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4} " required>
     </label>
     <label>E-mail:
       <input type="email" required>
@@ -108,7 +108,26 @@
       <input type="password" minlength="5" maxlength="12">
     </label>
     <label>Souhlas.......
-      <input type="checkbox">
+      <input type="checkbox" class="check">
+    </label>
+    <!-- <label>
+      Feedback
+      <textarea name="feedback" rows="5" placeholder="Enter your message here..."></textarea>
+    </label> -->
+    <!-- <label>
+      Weight with 0.5 step value:
+      <input type="number" name="weight" min="0" max="200" step="0.5" value="0" />
+    </label> -->
+    <label>
+      Interest rate:
+      <input
+        type="range"
+        name="interest_rate"
+        value="40"
+        min="0"
+        max="100"
+        step="20"
+      />
     </label>
     <button class="btn-submit">Odeslat</button>
   </form>
