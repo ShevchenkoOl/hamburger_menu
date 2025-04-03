@@ -10,7 +10,7 @@
   <header>
     <a href="itacademy.com"><img src="logo.jpg"/></a>
     <nav>
-        <ul>
+        <ul class="list">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#service">Service</a></li>
@@ -23,7 +23,97 @@
         <span></span>
     </div>
   </header>
+<main>
+<!-- <form>
+  <h2>Kontaktujte nas</h2>
+       <fieldset>
+            <legend>Osobní údaje</legend>
+            
+            <label for="name">Jméno:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+    
+        <fieldset>
+            <legend>Další informace</legend>
+            
+            <label for="age">Věk:</label>
+            <input type="number" id="age" name="age">
+            
+            <label for="gender">Pohlaví:</label>
+            <select id="gender" name="gender">
+                <option value="" selected disabled>Vyberte...</option>
+                <option value="male">Mužský</option>
+                <option value="female">Ženský</option>
+            </select>
+        </fieldset>
+  <label for="name">Jmeno:
+    <input type="text" id="name">
+  </label>
+  <label>E-mail:
+    <input type="email" required>
+  </label>
+  <label>Heslo:
+    <input type="password" minlength="5" maxlength="12">
+  </label>
+  <label>Souhlas.......
+    <input type="checkbox">
+  </label>
+  <label>Souhlas.......
+    <input type="radio">
+  </label>
+  <label>Date: 
+    <input type="date">
+  </label>
+  <label > Pohlavi: 
+  <select>
+    <option disabled>Zvolte mesic</option>
+    <optgroup label="Jaro">
+    <option>Brezen</option>
+    <option>Duben</option>
+    <option>Kveten</option>
+  </optgroup>
+  <optgroup label="leto">
+    <option>Cerven</option>
+    <option>Cervenec</option>
+    <option>Srpen</option>
+  </optgroup>
+  </select>
+  <input list="pohlavi">
+  <datalist id="pohlavi">
+    <option value="Male">
+    <option value="Famale">
+  </datalist>
+</label>
+  <button>Odeslat</button>
+</form> -->
 
+<button class="btn" id="openModal">Kontaktujte nas</button>
+</main>
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+  <span class="close">&#215</span>
+  <form>
+    <h2>Kontaktujte nas</h2>
+    <label for="name">Jmeno:
+      <input type="text" id="name">
+    </label>
+    <label>E-mail:
+      <input type="email" required>
+    </label>
+    <label>Heslo:
+      <input type="password" minlength="5" maxlength="12">
+    </label>
+    <label>Souhlas.......
+      <input type="checkbox">
+    </label>
+    <button class="btn-submit">Odeslat</button>
+  </form>
+  </div>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
