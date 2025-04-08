@@ -1,0 +1,144 @@
+.box { 
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; 
+    border: 1px double black;
+
+    /* background: linear-gradient(
+        to top, 
+        green 10%, 
+        red 10%,
+        black 10%
+        /* yellow,
+        pink); 
+    ); */
+
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    /* background: repeating-linear-gradient(to right, black, grey, black, grey); */
+    /* background: radial-gradient(ellipse at center top, yellow, green, blue); */
+    /* background-image: url('https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png');
+    background-size: 40px;
+    /* background-repeat: repeat;*/
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+
+    /* background-position: 50% 50%; */
+    /* background-position: 100px 100px; */
+    /* background-position: right 25px bottom 20px; */
+
+    /* background-size: cover;*/
+
+    /* background-image: url("https://image.ibb.co/mjdbZ5/bg5.jpg");
+    background-position: 50% 50%;
+    /* background-size: contain; 
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+/* body {
+    /* background: red url("https://image.ibb.co/mjdbZ5/bg5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+} */
+
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: blue;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgb(0, 255, 13);
+}
+.box3 {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgb(255, 0, 234);
+}
+
+/* .box::after {
+    content: "Tento text bude pred boksem";
+    color: rgb(196, 6, 248);
+    font-size: 40px
+}
+.box::before {
+    content: "Tento text bude pred boksem";
+    color: rgb(196, 6, 248);
+    font-size: 40px
+}
+
+.box:hover::after{
+    content: "Novy text";
+    color: green;
+    font-size: 30px;
+} */
+
+/*  */
+  /* .list {
+    margin: 0;
+    list-style: none;
+  }
+  
+  .list-item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
+  .list-link {
+    display: inline-flex;
+    align-items: center;
+    color: currentColor;
+    text-decoration: none;
+    font-size: 32px;
+  }
+  
+  .list-link:hover {
+    color: #2196f3;
+  } */
+  
+  .list-link::before,
+  .list-link::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+  }
+  
+  /* Adds and hides eyes icon after the link text */
+  .list-link::after {
+    display: none;
+    margin-left: 16px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/599/599516.png")
+  }
+  
+  /* Show arrow icon on hover */
+  .list-link:hover::after {
+    display: block;
+  }
+  .list-link {
+    display: inline-flex;
+    align-items: center;
+    color: currentColor;
+    text-decoration: none;
+    font-size: 32px;
+  }
+
+  body {
+    background-image:
+    url("https://cdn-icons-png.flaticon.com/512/361/361678.png"),
+    url("https://cdn-icons-png.flaticon.com/512/4206/4206277.png"),
+    url("https://cdn-icons-png.flaticon.com/512/814/814513.png"),
+    url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+
+    background-size: 70px, 150px, 90px, cover;
+    background-repeat: no-repeat;
+    background-position: left top, right bottom, 50% 50%;
+  }
