@@ -131,7 +131,7 @@
     font-size: 32px;
   }
 
-  body {
+  /* body {
     background-image:
     url("https://cdn-icons-png.flaticon.com/512/361/361678.png"),
     url("https://cdn-icons-png.flaticon.com/512/4206/4206277.png"),
@@ -141,4 +141,18 @@
     background-size: 70px, 150px, 90px, cover;
     background-repeat: no-repeat;
     background-position: left top, right bottom, 50% 50%;
+  } */
+
+  .div{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid black;
+
+    box-shadow:
+    2px -2px 4px 5px green, 
+    8px -8px 18px 7px red,
+    10px -10px 18px 10px rgb(115, 0, 255),
+    15px -18px 18px 15px rgb(255, 0, 170);
+    /* <x-offset> <y-offset> <blur> <spread> <color> */
   }
