@@ -100,20 +100,35 @@
     <h2>Kontaktujte nas</h2>
     <label for="name">
       Jmeno:
+      <div class="wrapper">
         <input
           type="text"
           id="name"
           placeholder="Enter your name....."
           required
         />
+        <svg class="icon">
+          <use href="./lekce_svg/icons.svg#user"></use>
+       </svg>
+      </div>
     </label>
     <label>
       E-mail:
+      <div class="wrapper">
         <input type="email" required />
+        <svg class="icon">
+          <use href="./lekce_svg/icons.svg#envelop"></use>
+       </svg>
+      </div>
     </label>
     <label>
       Heslo:
+      <div class="wrapper">
       <input type="password" minlength="5" maxlength="12" />
+      <svg class="icon">
+        <use href="./lekce_svg/icons.svg#lock"></use>
+     </svg>
+    </div>
     </label>
     <button class='button' type="submit">Submit</button>
   </form>

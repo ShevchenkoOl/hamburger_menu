@@ -164,7 +164,7 @@ label {
 }
 
 input {
-  padding: 10px 40px 10px 10px;
+  padding: 10px 10px 10px 40px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -185,4 +185,19 @@ input {
 
 .button:hover {
   background-color: #45a049;
+}
+
+
+.icon{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%); 
+
+}
+
+.wrapper{
+  position: relative;
 }
