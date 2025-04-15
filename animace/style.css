@@ -1,0 +1,281 @@
+body {
+  background-color: rgb(146, 231, 203);
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: blue;
+
+  transition-property: background-color, transform;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0, 1.42, 1, -0.14);
+  transition-delay: 0;
+  /* transition: all, 0.3s, linear, 0; */
+}
+
+.box:hover {
+  background-color: blueviolet;
+  transform: rotate(360deg);
+  /* transform:scale(1.5) */
+  /* transform: translate(150px, 300px); */
+  /* transform: skew(360deg, 360deg); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-right: 60px;
+  position: relative;
+  background-color: lightgreen;
+}
+
+ul::before {
+  content: "START";
+  right: -100px;
+  border-top: 2px solid red;
+}
+
+ul::after {
+  content: "FINISH";
+  left: -50px;
+  border-bottom: 2px solid red;
+}
+
+ul::before,
+ul::after {
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 280px;
+  text-align: center;
+  font-weight: bold;
+  top: 125px;
+  letter-spacing: 5px;
+  font-size: 24px;
+}
+
+li {
+  font-size: 40px;
+  margin-left: 100%;
+  transition: margin-left 3s;
+}
+
+ul:hover li {
+  margin-left: 0;
+}
+
+li:nth-child(1) {
+  transition-timing-function: linear;
+}
+
+li:nth-child(2) {
+  transition-timing-function: ease;
+}
+
+li:nth-child(3) {
+  transition-timing-function: ease-in;
+}
+
+li:nth-child(4) {
+  transition-timing-function: ease-in-out;
+}
+
+li:nth-child(5) {
+  transition-timing-function: steps(2, start);
+}
+
+
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    transition-property: transform;
+}
+
+.container:hover .circle{
+    transform: scale(1.5);
+}
+
+.circle:nth-child(1){
+    background-color: greenyellow;
+
+    transition-duration: 2s;
+
+    transition-delay: 1s;
+
+}
+
+.circle:nth-child(2){
+    background-color: rgb(9, 199, 228);
+
+    transition-duration: 0.5s;
+
+    transition-delay: 3s;
+
+}
+
+.circle:nth-child(3){
+    background-color: rgb(219, 110, 194);
+    transition-duration: 4s;
+
+    transition-delay: 0.5s;
+}
+/* img {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.5);
+    transform: rotate(360deg);
+  } */
+
+  
+
+
+
+  .box1{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(236, 121, 121);
+    position: relative;
+
+
+    /* animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    animation: move 3s linear alternate; 
+
+    /* animation-iteration-count:; */
+  }
+
+  @keyframes move {
+
+    0%{
+        /* left: 0px; */
+        transform:scale(1);
+    }
+    10% {
+        background-color: rgb(243, 50, 50);
+    }
+
+    40% {
+        background-color: rgb(120, 47, 16);
+    }
+    80% {
+        background-color: rgb(67, 26, 8);
+    }
+    100% {
+        transform:scale(1.5);
+        background-color: rgb(1, 1, 1);
+    }
+  }
+
+  .sun {
+    width: 400px;
+    height: 400px;
+    animation: rotating 3s linear infinite;
+    animation-play-state: running;
+  }
+.sun:hover {
+    animation-play-state: paused;
+}
+  @keyframes rotating{
+    0% {
+     transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+  }
+
+
+
+
+
+
+  .box2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(236, 121, 121);
+    position: relative;
+
+
+    animation: size 2s both;
+  }
+
+  @keyframes size {
+    0% {
+        width: 200px;
+        height: 200px;
+    }
+
+    100% {
+        width: 400px;
+        height: 400px;
+
+        background-color: blue;
+
+    }
+  }
+
+
+
+
+
+
+  .box3{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgb(236, 121, 121);
+    
+    animation: prespective 2s linear infinite;
+    transform-origin: center left;
+
+  }
+
+  @keyframes prespective {
+    0% {
+        /* transform: perspective(800px) rotateX(360deg); */
+        transform: rotate(0);
+        /* transform: rotate3d(0, 0, 0, 0deg); */
+    }
+
+    100% {
+        /* transform: perspective(800px) rotateX(-360deg); */
+        transform: rotate(360deg);
+        /* transform: rotate3d(1, 1, 1, 3600deg); */
+    }
+  }

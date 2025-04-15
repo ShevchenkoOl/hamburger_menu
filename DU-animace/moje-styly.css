@@ -1,0 +1,17 @@
+/* Do tohoto souboru piš vlastní styly */
+
+.digitalni__dvojtecka {
+	/* Zadefinuj a zde pak použij animaci blikání */
+}
+
+
+/* Statický ukázkový čas 4:35:57 */
+.analogove__hodinova {
+	transform: rotate(137.5deg);
+}
+.analogove__minutova {
+	transform: rotate(215.7deg);
+}
+.analogove__vterinova {
+	transform: rotate(342deg);
+}
