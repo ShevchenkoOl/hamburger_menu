@@ -1,0 +1,39 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    background: yellowgreen;
+	height: 20vh;
+	width: 100vw;
+}
+
+.content {
+	display: flex;
+	height: 60vh;
+}
+
+nav {
+    background: lightsteelblue;
+	width: 20vw;
+}
+
+article {
+	width: 60vw;
+}
+
+aside {
+    background: beige;
+	width: 20vw;
+}
+
+footer {
+    background: yellowgreen;
+	height: 20vh;
+	width: 100vw;
+}

@@ -1,0 +1,40 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  /* position: relativní; v CSS pro značku <body> je volitelná a neovlivňuje umístění prvků ve vašem případě.*/
+}
+.section {
+  height: 100vh;
+  margin-left: 150px; /*Abychom oddělili zbytek obsahu stránky od nav odsadíme doleva o nav*/
+  box-sizing: border-box; /*Při výpočtu velikosti prvku zohledněte vnitřní výplň a okraje */
+}
+
+main {
+  background-color: rgb(248, 238, 226);
+  display: flex;
+}
+
+nav {
+  background-color: rgb(199, 228, 169);
+  height: 100vh;
+  width: 20vw;
+}
+
+.content {
+  width: 80vw;
+}
+
+header,
+footer {
+  background-color: rgb(47, 254, 6);
+  height: 20vh;
+}
+
+article {
+  height: 60vh;
+}

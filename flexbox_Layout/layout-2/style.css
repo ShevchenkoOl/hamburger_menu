@@ -1,0 +1,39 @@
+*, :after, :before { box-sizing: border-box; }
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex; /*Přidáno zobrazení vlastností: flex; na body tag použít flexbox.*/
+  flex-direction: column;
+  position: relative;
+}
+.section{
+    margin-left: 150px; /*Abychom oddělili zbytek obsahu stránky od nav odsadíme doleva o nav*/
+}
+.header,
+.footer {
+  height: 20vh;
+  background-color: rgb(47, 254, 6);
+}
+.conteiner {
+  display: flex;
+  height: 60vh;
+  flex: 1; /*Přidána vlastnost flex: 1; do kontejneru .container, takže zabírá veškerý dostupný vertikální prostor.*/
+}
+.main {
+  background-color: rgb(248, 238, 226);
+  flex: 1;
+}
+.aside {
+    background-color: rgb(243, 209, 169);
+    width: 23vw;
+}
+.nav{
+    background-color: rgb(199, 228, 169);
+
+    position: absolute; /*umístěno vzhledem body*/
+    top: 0;
+    left: 0;
+
+    width: 150px;
+    height: 100%;
+}
