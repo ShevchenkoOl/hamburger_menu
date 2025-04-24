@@ -1,0 +1,78 @@
+.content{
+    display: flex;
+    flex-direction: column;
+
+ &.imgage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &:hover,
+    &:focus{
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+
+
+
+%odstavec1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.odstavec-footer{
+    @extend %odstavec1;
+}
+
+@mixin display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    @include display-flex;
+   gap:20px;
+}
+
+@mixin color($color){
+    color: $color;
+}
+
+.content{
+    @include color(#cd1f1f);
+}
+
+.odstavec-footer{
+    @include color(#1787dd);
+}
+
+$barva: #3498db, #333, #000;
+
+@each $elBarvy in $barva {
+    .odstavec-footer-#{elBarvy} {
+        color: $elBarvy;
+    }
+}
+
+// .odstavec-footer-3498db {
+//     color: #3498db
+// }
+
+// .odstavec-footer-333 {
+//     color: #333
+// }
+
+// .odstavec-footer-000 {
+//     color: #000
+// }
