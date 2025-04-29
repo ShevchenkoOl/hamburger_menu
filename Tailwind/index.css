@@ -1,0 +1,24 @@
+/* h1{
+    color: tomato;
+    text-align: center;
+   
+}
+
+/* h1:hover {
+    animation: fadeIn 2s;
+    color:rgb(3, 97, 97);
+    transform: scale(1.3);
+} */
+
+/*@media screen and (max-width: 768px) {
+    h1 {
+        animation: rotateOutUpLeft 2s;
+        color:blueviolet
+    }
+  } */
+
+  .form{
+    width: 400px;
+    height: 500px;
+    margin: 40px auto;
+  }

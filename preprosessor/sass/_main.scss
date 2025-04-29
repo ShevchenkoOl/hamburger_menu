@@ -45,8 +45,8 @@
    gap:20px;
 }
 
-@mixin color($color){
-    color: $color;
+@mixin brambory($mrkev){
+    color: $mrkev;
 }
 
 .content{
