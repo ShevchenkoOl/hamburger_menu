@@ -1,0 +1,15 @@
+.box {
+    border: 2px solid rgb(0, 255, 0);
+    color: red;
+    background-color: rgb(109, 109, 220);
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section{
+    color: black;
+    background-color: rgb(145, 213, 213);
+    font-size: 36px;
+}
