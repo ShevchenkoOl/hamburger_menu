@@ -102,10 +102,23 @@
 // // section.classList.remove("section");
 // section.classList.toggle("section");
 
-const img = document.querySelector("#img");
+// const img = document.querySelector("#img");
 
-img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg";
-img.alt = "dog";
-img.width = 100;
-const btn = document.querySelector("button[type='submit']");
-console.log(btn);
+// img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg";
+// img.alt = "dog";
+// img.width = 100;
+// const btn = document.querySelector("button[type='submit']");
+// console.log(btn);
+
+const categories = document.querySelector("#categories");
+const items = categories.querySelectorAll(".item");
+console.log("Number of categories: ", items.length);
+// console.log(item);
+
+items.forEach(item => {
+    const titleCat = item.querySelector("h2");
+    const el = item.querySelectorAll("li");
+
+    console.log("Category: ", titleCat.textContent);
+    console.log("Elements: ", el.length)
+})
