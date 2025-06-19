@@ -139,13 +139,14 @@
 // }
 
 // container.addEventListener("click", handle);
-// const curretTime = new Date();
-// const clock = document.querySelector("#time");
+
+
 
 // const time = () => {
-//   setInterval(() => {
-//   clock.textContent = `${curretTime.getHours()}:${curretTime.getMinutes()}:${curretTime.getSeconds()}`;
-// }, 1000);}
+//     const curretTime = new Date();
+//     const clock = document.querySelector("#time");
+//     clock.textContent = `${curretTime.getHours()}:${curretTime.getMinutes()}:${curretTime.getSeconds()}`;
+//   }
 
-// time(set);
+// setInterval(() => time(), 1000);
 
