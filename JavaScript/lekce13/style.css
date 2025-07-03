@@ -1,0 +1,30 @@
+body{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+}
+
+h1{
+    text-align: center;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid wheat;
+}
+
+button{
+    background-color: rgba(83, 169, 223, 0.829);
+    border: none;
+}
+
+ul{
+   list-style: none;
+}
+
+li{
+    margin-bottom: 10px;
+}

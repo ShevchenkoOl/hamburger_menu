@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "username": "Honza",
+      "post": "Ahoj, bohužel, d",
+      "like": 0,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "username": "Lucie",
+      "post": "Krasný den!",
+      "like": 1
+    },
+    {
+      "id": "4",
+      "username": "Karel",
+      "post": "Jdu na dovolenu!",
+      "like": 3
+    },
+    {
+      "id": "b44a",
+      "username": "Alex",
+      "post": "Hello",
+      "like": 0
+    },
+    {
+      "id": "5d12",
+      "username": "Alice",
+      "post": "Prochazka byla skvela!",
+      "like": 0
+    },
+    {
+      "id": "4bfd",
+      "username": "Honza",
+      "post": "Ahoj, bohužel,",
+      "like": 0
+    }
+  ]
+}

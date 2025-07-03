@@ -1,0 +1,25 @@
+[
+    {
+     "id": "1",
+     "username": "Anna",
+     "post": "Hello, to is good weather!"
+    },
+    
+    {
+     "id": "2",
+     "username": "Honza",
+     "post": "Ahoj, bohužel, dneska mám prace((((!"
+    },
+
+    {
+     "id": "3",
+     "username": "Lucie",
+     "post": "Krasný den!"
+    },
+
+    {
+     "id": "4",
+     "username": "Karel",
+     "post": "Jdu na dovolenu!"
+    }
+]
